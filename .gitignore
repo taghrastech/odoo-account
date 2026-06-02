@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Odoo / local
+*.log

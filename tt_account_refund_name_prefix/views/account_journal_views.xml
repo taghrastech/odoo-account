@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_account_journal_form_tt_refund_prefix" model="ir.ui.view">
+        <field name="name">account.journal.form.tt.refund.prefix</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form"/>
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="tt_invoice_prefix"
+                       invisible="type not in ('sale', 'purchase')"/>
+                <field name="tt_refund_prefix"
+                       invisible="type not in ('sale', 'purchase')"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
